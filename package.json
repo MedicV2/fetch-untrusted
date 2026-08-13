@@ -1,0 +1,41 @@
+{
+  "name": "fetch-untrusted",
+  "version": "1.0.0",
+  "description": "fetch() for URLs you did not write. Resolves, blocks private IPs, pins the connection, re-checks redirects.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "ssrf",
+    "fetch",
+    "security",
+    "ssrf-protection",
+    "untrusted-url"
+  ],
+  "license": "MIT",
+  "author": "Medic",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MedicV2/fetch-untrusted.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MedicV2/fetch-untrusted/issues"
+  },
+  "homepage": "https://github.com/MedicV2/fetch-untrusted#readme",
+  "sideEffects": false
+}
